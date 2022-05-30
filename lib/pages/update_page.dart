@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:super_simple_todo_app/users/user_service.dart';
 
-class InputPage extends StatelessWidget {
-  InputPage({Key? key}) : super(key: key);
+class UpdatePage extends StatelessWidget {
+  UpdatePage({Key? key, required this.path, required this.userPath})
+      : super(key: key);
   TextEditingController _titleController = TextEditingController();
   TextEditingController _subtitleController = TextEditingController();
   String? title;
   String? subtitle;
+  String path;
+  String userPath;
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +21,9 @@ class InputPage extends StatelessWidget {
               onPressed: () {
                 UserService()
                     .db
-                    .collection("users")
-                    .add({"first": title, "last": subtitle});
+                    .collection(userPath)
+                    .doc(path)
+                    .update({"first": title, "last": subtitle});
                 Navigator.of(context).pop();
               },
               icon: Icon(Icons.add))

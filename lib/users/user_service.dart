@@ -5,7 +5,7 @@ class UserService {
 
   // Create a new user with a first and last name
 
-  deleteUserData(String path) {
-    db.collection("users").doc(path).delete();
+  deleteUserData(String colPath, String docPath) {
+    db.collection(colPath).doc(docPath).delete();
   }
 }
