@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "495507304495",
+    "project_id": "supersimpletodoapp",
+    "storage_bucket": "supersimpletodoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495507304495:android:4889e973443985deb4d6da",
+        "android_client_info": {
+          "package_name": "com.example.super_simple_todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495507304495-8k7lgmc427llq3v6ejtocm33q17eueiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-5gqqbXWHUy7mlVANrAsOIsBnsT0I8rQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495507304495-8k7lgmc427llq3v6ejtocm33q17eueiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
